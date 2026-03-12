@@ -1,6 +1,6 @@
 module github.com/luxfi/tui
 
-go 1.26
+go 1.26.1
 
 require (
 	github.com/charmbracelet/bubbles v0.20.0
