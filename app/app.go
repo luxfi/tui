@@ -57,6 +57,11 @@ type App struct {
 	refreshInterval time.Duration
 }
 
+// SetEndpoint overrides the default API endpoint.
+func (a *App) SetEndpoint(ep string) {
+	a.apiEndpoint = ep
+}
+
 // NewApp creates a new application model
 func NewApp() *App {
 	s := spinner.New()
