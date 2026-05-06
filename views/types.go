@@ -22,7 +22,7 @@ type NodeStatus struct {
 // ChainStatus represents a chain's status
 type ChainStatus struct {
 	ChainID    string
-	SubnetID   string
+	L1ID       string // empty = Primary Network
 	Name       string
 	Type       string
 	Height     uint64
