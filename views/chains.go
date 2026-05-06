@@ -118,11 +118,9 @@ func (m ChainsModel) renderChainDetails(chain ChainStatus) string {
 %s: %s
 %s: %s
 %s: %s
-%s: %s
 %s: %s`,
 		styles.LabelStyle.Render("Name"), styles.ValueStyle.Render(chain.Name),
 		styles.LabelStyle.Render("Chain ID"), styles.ValueStyle.Render(chain.ChainID),
-		styles.LabelStyle.Render("L1 ID"), styles.ValueStyle.Render(chain.L1ID),
 		styles.LabelStyle.Render("Type"), styles.ValueStyle.Render(chain.Type),
 		styles.LabelStyle.Render("Height"), styles.ValueStyle.Render(fmt.Sprintf("%d", chain.Height)),
 		styles.LabelStyle.Render("TPS"), styles.ValueStyle.Render(fmt.Sprintf("%.2f", chain.TPS)))
